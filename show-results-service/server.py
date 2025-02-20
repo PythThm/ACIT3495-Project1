@@ -60,7 +60,7 @@ def gpa_statistics():
     
     logging.debug(f"Fetching GPA statistics for student_id: {student_id}")
 
-    result = mongo.db.gpas.find_one(
+    result = mongo.db.analytics.find_one(
     {"student_id": {"$in": [student_id, str(student_id)]}},
     sort=[('_id', -1)]
 )

@@ -117,8 +117,7 @@ def calculate_and_store_gpa():
     # Return the calculated GPA and statistics as a response
     return jsonify({
         'student_id': student_id,
-        'gpa': gpa,
-        'gpa_statistics': grade_stats
+        'gpa': gpa
     })
 
 if __name__ == '__main__':
